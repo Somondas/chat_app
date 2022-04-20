@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #eee8e8, #2bd3df);
+}
+
+.root nav {
+  text-align: center;
+}
+
+.root nav img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.root .chat_box {
+  margin: auto;
+  width: 70%;
+  height: 50%;
+  border: 10px double #fff;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.root .chat_box .box {
+  border: 2px solid #fff;
+  padding: 1rem;
+  width: 24%;
+  background-color: #fff;
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+.root .chat_box .left {
+  float: left;
+  clear: both;
+}
+
+.root .chat_box .right {
+  float: right;
+  clear: both;
+}
+
+.root .chat_box .chat {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.root .chat_box .chat input {
+  margin-top: 2rem;
+  width: 58.5rem;
+  padding: 2px;
+  font-size: 1.5rem;
+}
+
+.root .chat_box .chat button {
+  padding: 2px;
+  font-size: 1.5rem;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #eee8e8, #2bd3df);
+  }
+  .root nav {
+    text-align: center;
+  }
+  .root nav img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .root .chat_box {
+    margin: auto;
+    width: 95%;
+    height: 48%;
+    border: 10px double #fff;
+    overflow-y: scroll;
+    position: relative;
+  }
+  .root .chat_box .box {
+    border: 2px solid #fff;
+    padding: 1rem;
+    width: auto;
+    background-color: #1df1ce;
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+  .root .chat_box .left {
+    float: left;
+    clear: both;
+  }
+  .root .chat_box .right {
+    float: right;
+    clear: both;
+  }
+  .root .chat_box .chat {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .root .chat_box .chat input {
+    width: 130% !important;
+    padding: 2px;
+    font-size: 1.5rem;
+  }
+  .root .chat_box .chat button {
+    padding: 2px;
+    font-size: 1.5rem;
+    background-color: #fff;
+  }
+}
+/*# sourceMappingURL=style.css.map */

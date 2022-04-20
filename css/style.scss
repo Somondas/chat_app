@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgb(238, 232, 232),
+    rgb(43, 211, 223)
+  );
+  nav {
+    text-align: center;
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  .chat_box {
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    border: 10px double #fff;
+    overflow-y: scroll;
+    position: relative;
+    .box {
+      border: 2px solid #fff;
+      padding: 1rem;
+      width: 24%;
+      background-color: #fff;
+      margin: 1rem;
+      font-size: 1.4rem;
+      // height: auto;
+    }
+    .left {
+      float: left;
+      clear: both;
+    }
+    .right {
+      float: right;
+      clear: both;
+    }
+    .chat {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      input {
+        margin-top: 2rem;
+        width: 58.5rem;
+        padding: 2px;
+        font-size: 1.5rem;
+      }
+      button {
+        padding: 2px;
+        font-size: 1.5rem;
+        background-color: #fff;
+      }
+    }
+  }
+}
+// .container{
+//     overflow-y: scroll;
+// }
+@media only screen and (max-width: 600px) {
+  .root {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+      45deg,
+      rgb(238, 232, 232),
+      rgb(43, 211, 223)
+    );
+    nav {
+      text-align: center;
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+    .chat_box {
+      margin: auto;
+      width: 95%;
+      height: 48%;
+      border: 10px double #fff;
+      overflow-y: scroll;
+      position: relative;
+      .box {
+        border: 2px solid #fff;
+        padding: 1rem;
+        width: auto;
+        background-color: rgb(29, 241, 206);
+        
+        margin: 1rem;
+        font-size: 1.4rem;
+        // height: auto;
+      }
+      .left {
+        float: left;
+        clear: both;
+      }
+      .right {
+        float: right;
+        clear: both;
+      }
+      .chat {
+          margin: 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        input {
+        //   margin-top: 2rem;
+          width: 130% !important;
+          padding: 2px;
+          font-size: 1.5rem;
+        }
+        button {
+          padding: 2px;
+          font-size: 1.5rem;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
