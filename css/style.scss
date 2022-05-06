@@ -10,8 +10,8 @@
   height: 100vh;
   background-image: linear-gradient(
     45deg,
-    rgb(238, 232, 232),
-    rgb(43, 211, 223)
+    #06beb6 ,
+    #48b1bf
   );
   nav {
     text-align: center;
@@ -48,16 +48,23 @@
       position: absolute;
       width: 100%;
       bottom: 0;
+      form{
+        width: 70%;
+        display: flex;
+      }
       input {
         margin-top: 2rem;
-        width: 58.5rem;
+        width: 70%;
         padding: 2px;
         font-size: 1.5rem;
+      }
+      .btn{
+        width: 30%;
       }
       button {
         padding: 2px;
         font-size: 1.5rem;
-        background-color: #fff;
+        background-color: black;
       }
     }
   }
@@ -111,11 +118,17 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        input {
-        //   margin-top: 2rem;
-          width: 130% !important;
-          padding: 2px;
-          font-size: 1.5rem;
+        form{
+          width: 90%;
+          input {
+          //   margin-top: 2rem;
+            width: 90% !important;
+            padding: 2px;
+            font-size: 1.5rem;
+          }
+          .btn{
+            width: 10%;
+          }
         }
         button {
           padding: 2px;

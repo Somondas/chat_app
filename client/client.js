@@ -44,7 +44,7 @@ socket.on("receive", data => {
     
 })
 socket.on("left", name => {
-    appendItem(`${name} left the chat`, "left");
+    appendItem(`${name}: left the chat`, "left");
     
 })
 
